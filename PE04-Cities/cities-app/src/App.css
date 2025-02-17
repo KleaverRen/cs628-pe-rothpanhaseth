@@ -1,0 +1,118 @@
+/* src/App.css */
+
+body {
+  font-family: sans-serif; /* Use a consistent font */
+  margin: 0; /* Remove default body margin */
+  padding: 0;
+  background-color: #f4f4f4; /* Light background color */
+  color: #333; /* Dark text color for contrast */
+}
+
+.app-container {
+  width: 90%; /* Occupy most of the screen width */
+  max-width: 960px; /* Set a maximum width for larger screens */
+  margin: 20px auto; /* Center the container */
+  background-color: #fff; /* White background for the container */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-radius: 8px; /* Rounded corners */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center; /* Center the buttons */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.navigation button {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navigation button:hover {
+  background-color: gainsboro; /* Darker blue on hover */
+}
+
+.cities-list-container {
+  display: flex;
+  gap: 20px; /* Space between list and details */
+}
+
+.cities-list-container ul {
+  list-style: none;
+  padding: 0;
+  border-right: 1px solid #ddd; /* Add a separator line */
+  padding-right: 20px;
+  flex: 1; /* Allow list to take up available space */
+}
+
+.cities-list-container li {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-bottom: 1px solid #eee; /* Add a separator line for list items */
+  transition: background-color 0.2s ease;
+}
+
+.cities-list-container li:hover {
+  background-color: #f0f0f0; /* Light gray on hover */
+}
+
+.city-details-container {
+  flex: 2; /* Allow details to take up more space */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.city-details-container h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.add-city-container {
+  /* Style the form as needed */
+  max-width: 400px;
+  margin: 0 auto; /* Center the form */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.add-city-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-city-container input {
+  width: calc(100% - 12px); /* Ensure inputs take full width */
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.add-city-container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Make button full width */
+  transition: background-color 0.3s ease;
+}
+
+.add-city-container button:hover {
+  background-color: #0056b3;
+}

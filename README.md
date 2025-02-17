@@ -44,3 +44,20 @@ The user inputs a task description through the input field.
 ## Output
 
 The tasks are displayed in a list with delete functionality, reflecting changes instantly based on user actions.
+
+# PE04 - Cities App
+
+## Input
+- User can view a list of cities.
+- User can add a new city.
+- Clicking a city name shows details.
+
+## Process
+- Uses React Router for navigation.
+- Fetches city details using `useParams`.
+- Redirects user after adding a city.
+
+## Output
+- Displays a list of cities.
+- Shows details of a selected city.
+- Successfully added cities redirect back to the list.
